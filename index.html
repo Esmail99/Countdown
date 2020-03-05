@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div id="userInputs">
+            <div>
+                Event Name : <input type="text" id="eventTitle" placeholder="Enter event title.."><br>
+            </div>
+            <div>
+                Date : <input type="date" id="eventDate">
+            </div>
+            <div>
+                Time : <input type= "time" id="eventTime">
+            </div>    
+            <button>Start</button>
+        </div>
+        <div id="countdown">
+            <h1></h1>
+            <div id="timer">
+                <span id="days" class="timerBlocks"></span> : 
+                <span id="hours" class="timerBlocks"></span> : 
+                <span  id="minutes" class="timerBlocks"></span> : 
+                <span id="seconds" class="timerBlocks"></span>
+            </div>
+            <div id="timerText">
+                <span class="timerTextBlocks daysText">DAYS</span>
+                <span class="timerTextBlocks hoursText">HOURS</span>
+                <span class="timerTextBlocks minutesText">MINUTES</span>
+                <span class="timerTextBlocks secondsText">SECONDS</span>
+            </div>
+        </div>
+        <h1 id="eventStarted">THE EVENT HAS BEGUN !</h1>
+        
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
