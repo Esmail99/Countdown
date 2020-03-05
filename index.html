@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
+        <!-- User inputs form -->
         <div id="userInputs">
             <div>
                 Event Name : <input type="text" id="eventTitle" placeholder="Enter event title.."><br>
@@ -17,13 +18,14 @@
             </div>    
             <button>Start</button>
         </div>
+        <!-- Couuntdown Timer -->
         <div id="countdown">
             <h1></h1>
             <div id="timer">
-                <span id="days" class="timerBlocks"></span> : 
-                <span id="hours" class="timerBlocks"></span> : 
-                <span  id="minutes" class="timerBlocks"></span> : 
-                <span id="seconds" class="timerBlocks"></span>
+                <span id="days" class="timerBlocks">00</span> : 
+                <span id="hours" class="timerBlocks">00</span> : 
+                <span  id="minutes" class="timerBlocks">00</span> : 
+                <span id="seconds" class="timerBlocks">00</span>
             </div>
             <div id="timerText">
                 <span class="timerTextBlocks daysText">DAYS</span>
@@ -32,8 +34,8 @@
                 <span class="timerTextBlocks secondsText">SECONDS</span>
             </div>
         </div>
+        <!-- After the Event starts -->
         <h1 id="eventStarted">THE EVENT HAS BEGUN !</h1>
-        
         <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>
