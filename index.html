@@ -2,25 +2,20 @@
 <html>
     <head>
         <title>Countdown Timer</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
         <!-- User inputs form -->
         <div id="userInputs">
-            <div>
-                Event Name : <input type="text" id="eventTitle" placeholder="Enter event title.."><br>
-            </div>
-            <div>
-                Date : <input type="date" id="eventDate">
-            </div>
-            <div>
-                Time : <input type= "time" id="eventTime">
-            </div>    
-            <button>Start</button>
+            <div>Event Name : <input id="eventTitle" type="text" placeholder="Enter event title.."></div>
+            <div>Date : <input id="eventDate" type="date"></div>
+            <div>Time : <input id="eventTime" type="time"></div>    
+            <button id="button">Start</button>
         </div>
-        <!-- Couuntdown Timer -->
+
+        <!-- Countdown Timer -->
         <div id="countdown">
-            <h1></h1>
+            <h1 id="h1"></h1>
             <div id="timer">
                 <span id="days" class="timerBlocks">00</span> : 
                 <span id="hours" class="timerBlocks">00</span> : 
@@ -34,8 +29,10 @@
                 <span class="timerTextBlocks secondsText">SECONDS</span>
             </div>
         </div>
+
         <!-- After the Event starts -->
         <h1 id="eventStarted">THE EVENT HAS BEGUN !</h1>
-        <script type="text/javascript" src="./script.js"></script>
+
+        <script type="module" src="./JavaScript/main.js"></script>
     </body>
 </html>
